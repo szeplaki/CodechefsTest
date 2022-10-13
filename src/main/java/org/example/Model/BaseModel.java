@@ -25,7 +25,7 @@ public class BaseModel {
     protected WebElement firstLoginButton;
     @FindBy(id="submit-login")
     protected WebElement secondLoginButton;
-    @FindBy(className = "logout")
+    @FindBy(id = "logout")
     protected WebElement logoutButton;
 
     public BaseModel() {

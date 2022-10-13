@@ -22,11 +22,11 @@ public class LogoutTest {
     public void testLogout() {
         logoutModel.doLogin();
 
-        logoutModel.waitUntilWebElementIsClickable("className", "logout");
+        logoutModel.waitUntilWebElementIsClickable("id", "logout");
         logoutModel.clickOnLogoutButton();
 
         logoutModel.openBaseUrl();
-        logoutModel.waitUntilWebElementIsClickable("xpath", "//*[@id='root']//a[text() = 'Login']");
+        logoutModel.waitUntilWebElementIsClickable("id", "go-login");
         Assertions.assertEquals("Login", logoutModel.getLoginButtonText());
     }
 }

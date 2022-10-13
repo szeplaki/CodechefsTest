@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class LogoutModel extends BaseModel {
-    @FindBy(xpath = "//*[@id='root']/div/div[1]/nav/a[5]")
+    @FindBy(id = "go-login")
     private WebElement loginButtonOnHomePage;
 
     public void clickOnLogoutButton() {
