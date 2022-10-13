@@ -17,13 +17,13 @@ public class BaseModel {
     protected final WebDriverWait driverWait;
 
 
-    @FindBy(xpath = "//*[@id='signup']/div[4]/input[1]")
+    @FindBy(id="login-username")
     protected WebElement usernameField;
-    @FindBy(xpath = "//*[@id='signup']/div[4]/input[2]")
+    @FindBy(id="login-password")
     protected WebElement passwordField;
-    @FindBy(xpath = "//*[@id='root']//a[text() = 'Login']")
+    @FindBy(id="go-login")
     protected WebElement firstLoginButton;
-    @FindBy(xpath = "//*[@id='signup']/div[4]/input[3]")
+    @FindBy(id="submit-login")
     protected WebElement secondLoginButton;
     @FindBy(className = "logout")
     protected WebElement logoutButton;
